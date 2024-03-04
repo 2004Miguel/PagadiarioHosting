@@ -35,7 +35,7 @@ if(isset($_POST['ver_abonos'])){
     <title>Inicio</title>
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <head>
         <H1>ELIJA QUE HACER</H1>
     </head>
@@ -47,39 +47,28 @@ if(isset($_POST['ver_abonos'])){
             <input type="submit" value="AÑADIR" name="btn_añadir">
             <p>Este botón es para crear nuevas deudas</p>
 
-        </form>
        
-        <form action="" method="POST">
             <br>
             <h3>ABONAR</h3>
             <input type="submit" name="btn_abonar" value="AÑADIR">
             <p>Esta opción es para añadir abonos de los deudores</p>
             <br>
-        </form>
 
-        <form action="" method="POST">
             <h3>VER DEUDORES</h3>
             <p>Aprete el siguiente botón para ver las personas con saldos pendientes</p>
             <input type="submit" name="btn_deudor" value="VER DEUDORES">
-        </form>
-        <br></br>
+            <br></br>
 
-        <form action="" method="post">
             <h3>Borrar deudas</h3>
             <p>Si desea eliminar alguna deuda, de click en el siguiente botón</p>
             <input type="submit" name="btn_borrar" value="BORRAR">
-        </form>
-        <br></br>
+            <br></br>
 
 
-        <form action="" method="post">
             <h3>Ver abonos</h3>
             <p>Si quiere ver todos los abonos, de click en el botón</p>
             <input type="submit" name="ver_abonos" value="VER ABONOS">
-        </form>
-
-        
+        </form>        
     </main>
-    
 </body>
 </html>
