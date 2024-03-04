@@ -35,11 +35,11 @@ if(isset($_POST['ver_abonos'])){
 </head>
 <body>
     <head>
-        <H1>ELIJA QUE HACER</H1>
+        <H1>GESTOR DE DEUDAS ONLINE</H1>
     </head>
     <main>
         <form action="" method="POST">
-            <p>Aprete un botón para hacer lo que necesite</p>
+           <!-- <p>Aprete un botón para hacer lo que necesite</p> -->
             <br>
             <h3>AÑADIR</h3>
             <input type="submit" value="AÑADIR" name="btn_añadir">
