@@ -35,7 +35,6 @@ if(isset($_POST['ver_abonos'])){
 </head>
 <body>
     <head>
-        <h1>Esto se agregó desde el pc local</h1>
         <H1>ELIJA QUE HACER</H1>
     </head>
     <main>
