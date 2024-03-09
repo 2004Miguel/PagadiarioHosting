@@ -46,6 +46,9 @@
         public function Insertar($insert){
             if($resultado2=mysqli_query($this->conexion, $insert)){
                 print("Deuda creada con éxito");
+                return 1;
+            }else{
+                return 0;
             }
         }
         
@@ -249,6 +252,18 @@
                 print("El cliente no tiene deudas pendientes");
             }
 
+        }
+
+        public function enviarEmail($remitente){
+            ini_set( 'display_errors', 1 );//La línea 1 y 2 permiten informar si el script no se ejecuta
+            error_reporting( E_ALL );
+            $from = "miguel@gestordeudas.online";//Correo desde el cual se va a enviar el mensaje
+            $to = $remitente;//Destinatario del correo
+            $subject = "Deuda creada";//Asunto del correo
+            $message = "Su deuda fue creada con exito";//Se redacta el mensaje
+            $headers = "From:" . $from;//Detalla la información vital, como la dirección del remitente, la ubicación de respuesta, etc.
+            mail($to,$subject,$message, $headers);//Esta línea ejecuta la función 
+            echo "El correo fue enviado con exito";
         }
     }
 ?>
