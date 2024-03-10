@@ -60,12 +60,13 @@ if(isset($_POST['btn_pagar'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f350240ada.js" crossorigin="anonymous"></script>
     <title>Abonar</title>
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <h1>PANTALLA ABONAR</h1>
-    <!--
+    
     <form action="" method="POST">
         <input type="submit" name="btn_volver" value="VOLVER">
     </form>
@@ -85,7 +86,7 @@ if(isset($_POST['btn_pagar'])){
         <br></br>
         <input type="submit" value="PAGAR" name="btn_pagar">
     </form>
--->
+
     <div class="container-fluid row">
         <div class="col-8 p-4">
             <table class="table">
@@ -108,10 +109,10 @@ if(isset($_POST['btn_pagar'])){
                         <td>algo</td>
                         <td>algo2</td>
                         <td>
-                            <a href="">Abonar</a>
+                            <a href=""><i class="fa-solid fa-money-bill-wave"></i></a>
                         </td>
                         <td>
-                            <a href="">Ver abonos</a>
+                            <a href=""><i class="fa-solid fa-list"></i></a>
                         </td>
                     </tr>
                 </tbody>
