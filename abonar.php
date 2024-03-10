@@ -95,7 +95,8 @@ if(isset($_POST['btn_pagar'])){
                         <th scope="col">Id cliente</th>
                         <th scope="col">Monto prestado</th>
                         <th scope="col">Restante</th>
-                        <th scope="col">Acciones</th>
+                        <th scope="col">Abonar</th>
+                        <th scope="col">Ver abonos</th>
                     </tr>
                 </thead>
                 <tbody>
