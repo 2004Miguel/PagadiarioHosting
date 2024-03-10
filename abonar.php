@@ -109,7 +109,7 @@ if(isset($_POST['btn_pagar'])){
                     $obTabla->conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004", "8DEL2Del2004@");
                     $query = "SELECT * FROM prestamo";
                     $resul = mysqli_query($obTabla->conexion, $query);
-                    while($datos = $resul->mysqli_fetch_object()){?>
+                    while($datos = $resul->fetch_object()){?>
                         <tr>
                             <td><?php $datos->estado ?></td>
                             <td><?php $datos->fecha_prestamo ?></td>
