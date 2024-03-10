@@ -253,6 +253,10 @@
                 print("El cliente no tiene deudas pendientes");
             }*/
             while($dato = $resul->fetch_object()){
+                echo "<strong>Id deuda: </strong>";
+                print($dato->id);
+                echo " ";
+
                 echo "<strong>Fecha de prestamo: </strong>";
                 print($dato->fecha_prestamo);
                 echo " ";
