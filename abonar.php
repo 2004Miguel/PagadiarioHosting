@@ -109,10 +109,10 @@ if(isset($_POST['btn_pagar'])){
                         <td>algo</td>
                         <td>algo2</td>
                         <td>
-                            <a href=""><i class="fa-solid fa-money-bill-wave"></i></a>
+                            <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
                         </td>
                         <td>
-                            <a href=""><i class="fa-solid fa-list"></i></a>
+                            <a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-list"></i></a>
                         </td>
                     </tr>
                 </tbody>
