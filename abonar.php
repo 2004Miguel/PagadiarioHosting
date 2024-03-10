@@ -65,6 +65,7 @@ if(isset($_POST['btn_pagar'])){
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <h1>PANTALLA ABONAR</h1>
+    <!--
     <form action="" method="POST">
         <input type="submit" name="btn_volver" value="VOLVER">
     </form>
@@ -84,7 +85,7 @@ if(isset($_POST['btn_pagar'])){
         <br></br>
         <input type="submit" value="PAGAR" name="btn_pagar">
     </form>
-
+-->
     <div class="container-fluid row">
         <div class="col-8 p-4">
             <table class="table">
