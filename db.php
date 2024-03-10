@@ -26,7 +26,7 @@
                 echo "error al conectar con la base de datos";
                 exit();
             }
-            print('Conexion exitosa');
+            //print('Conexion exitosa');
         }
 
         public function Mostrar_deudores(/*$consultap*/){
