@@ -112,6 +112,8 @@ if(isset($_POST['btn_pagar'])){
                     $resul = mysqli_query($obTabla->conexion, $query);
                     if($resul != false){
                         print("se hizo la consulta");
+                    }else{
+                        print("error");
                     }
                     while($datos = $resul->fetch_object()){?>
                         <tr>
