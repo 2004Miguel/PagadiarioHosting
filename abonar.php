@@ -120,7 +120,7 @@ if(isset($_POST['btn_pagar'])){
                             <td><?= $datos->monto_prestado?></td>
                             <td><?= $datos->restante?></td>
                             <td>
-                                <input type="number" size="40">
+                                <input type="number" size="40px">
                             </td>
                             <td>
                                 <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
