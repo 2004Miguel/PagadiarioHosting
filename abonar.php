@@ -1,5 +1,5 @@
 <?php
-//include "db.php";
+include "db.php";
 session_start();
 
 $ob5=new Base_datos();
