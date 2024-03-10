@@ -66,9 +66,6 @@ if(isset($_POST['ver_abonos'])){
             <h3>Ver abonos</h3>
             <p>Si quiere ver todos los abonos, de click en el botón</p>
             <input type="submit" name="ver_abonos" value="VER ABONOS">
-
-            <a href="./testMail.php">probar el envío de emails</a>
-
         </form>        
     </main>
 </body>
