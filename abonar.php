@@ -64,8 +64,9 @@ if(isset($_POST['btn_pagar'])){
     <title>Abonar</title>
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <h1>PANTALLA ABONAR</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <!--
     
     <form action="" method="POST">
@@ -105,16 +106,12 @@ if(isset($_POST['btn_pagar'])){
                 </thead>
                 <tbody>
                     <?php
-                    include "db.php";
+                    //include "db.php";
                     $obTabla = new Base_datos();
                     $obTabla->Conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004", "8DEL2Del2004@");
-                    $query = "SELECT*FROM prestamo";
+                    $query = "SELECT * FROM prestamo";
                     $resul = mysqli_query($obTabla->conexion, $query);
-                    if($resul != false){
-                        print("se hizo la consulta");
-                    }else{
-                        print("error");
-                    }
+            
                     while($datos = $resul->fetch_object()){?>
                         <tr>
                             <td><?= $datos->estado?></td>
