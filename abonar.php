@@ -106,7 +106,8 @@ if(isset($_POST['btn_pagar'])){
                     include "db.php";
                     $obTabla = new Base_datos();
                     $obTabla->conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004", "8DEL2Del2004@");
-                    while($obTabla->Mostrar_deudores()){?>
+                    $deudores = $obTabla->Mostrar_deudores();
+                    while($deudores){?>
                         <tr>
                             <td>Mark</td>
                             <td>Otto</td>
