@@ -99,6 +99,8 @@ if(isset($_POST['btn_pagar'])){
                         <th scope="col">Restante</th>
                         <th scope="col">Abonar</th>
                         <th scope="col">Ver abonos</th>
+                        <th scope="col">Ver abonos</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -116,6 +118,7 @@ if(isset($_POST['btn_pagar'])){
                             <td>algo</td>
                             <td>algo2</td>
                             <td>algo2</td>
+
 
                             <td>
                                 <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
