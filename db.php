@@ -267,7 +267,7 @@
 
                 echo "<strong>Estado: </strong>";
                 print($dato->estado);
-                echo " ";
+                echo "<br></br>";
 
             }
 
