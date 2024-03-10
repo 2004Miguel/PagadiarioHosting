@@ -85,37 +85,38 @@ if(isset($_POST['btn_pagar'])){
         <input type="submit" value="PAGAR" name="btn_pagar">
     </form>
 
-    <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-
-
+    <div class="container-fluid row">
+        <div class="col-8 p-4">
+            <table class="table">
+                <thead class="bg-info">
+                    <tr>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Fecha de prestamo</th>
+                        <th scope="col">Id cliente</th>
+                        <th scope="col">Monto prestado</th>
+                        <th scope="col">Restante</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>algo</td>
+                        <td>algo2</td>
+                        <td>
+                            <a>Abonar</a>
+                        </td>
+                        <td>
+                            <a>Ver abonos</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     
 </body>
 </html>
