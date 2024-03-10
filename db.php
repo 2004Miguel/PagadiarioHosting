@@ -228,8 +228,9 @@
         function Deudores($id_clien){
             $query="SELECT*FROM prestamo WHERE id_cliente='$id_clien'";
             $resul=mysqli_query($this->conexion, $query);
-            $fil=mysqli_fetch_row($resul);  
+            //$fil=mysqli_fetch_row($resul);  
 
+            /*
             if($resul->num_rows>0){
 
                 echo "<strong>Fecha de prestamo: </strong>";
@@ -250,7 +251,26 @@
                 
             }else{
                 print("El cliente no tiene deudas pendientes");
+            }*/
+            while($dato = $resul->fetch_object()){
+                echo "<strong>Fecha de prestamo: </strong>";
+                print($dato->fecha_prestamo);
+                echo " ";
+
+                echo "<strong>Restante: </strong>";
+                print($dato->restante);
+                echo " ";
+
+                echo "<strong>Monto prestado: </strong>";
+                print($dato->monto_prestado);
+                echo " ";
+
+                echo "<strong>Estado: </strong>";
+                print($dato->estado);
+                echo " ";
+
             }
+
 
         }
 
@@ -265,5 +285,6 @@
             mail($to,$subject,$message, $headers);//Esta línea ejecuta la función 
             echo "El correo fue enviado con exito";
         }
+
     }
 ?>
