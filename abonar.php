@@ -102,6 +102,9 @@ if(isset($_POST['btn_pagar'])){
                     </tr>
                 </thead>
                 <tbody>
+                    <?php
+                    include "db.php";
+                    ?>
                     <tr>
                         <td>Mark</td>
                         <td>Otto</td>
