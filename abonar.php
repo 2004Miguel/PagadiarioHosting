@@ -106,8 +106,9 @@ if(isset($_POST['btn_pagar'])){
                     include "db.php";
                     $obTabla = new Base_datos();
                     $obTabla->conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004", "8DEL2Del2004@");
-                    $deudores = $obTabla->Mostrar_deudores();
-                    while($deudores){?>
+                    $query = "SELECT * FROM prestamo";
+                    $resul = mysqli_query($obTabla->conexion, $query);
+                    while($datos = $query->mysqli_fetch_object()){?>
                         <tr>
                             <td>Mark</td>
                             <td>Otto</td>
