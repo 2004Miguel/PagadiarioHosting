@@ -42,7 +42,7 @@ if(isset($_POST['btn_pagar'])){
             if($abono_resul==1){
 
                 $tot_abon=$ob5->Suma_abono($id_deuda, $id_clien);
-                $restante=$ob5->Restante_prestamo($id_clien);//Se obtiene el valor que se prestó
+                $restante=$ob5->Restante_prestamo($id_clien, $id_deuda);//Se obtiene el valor que se prestó
 
                 $ob5->Update_restante_prestamo($tot_abon, $restante, $id_deuda, $id_clien);
             }
