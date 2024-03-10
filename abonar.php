@@ -66,6 +66,7 @@ if(isset($_POST['btn_pagar'])){
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <h1>PANTALLA ABONAR</h1>
+    <!--
     
     <form action="" method="POST">
         <input type="submit" name="btn_volver" value="VOLVER">
@@ -86,7 +87,7 @@ if(isset($_POST['btn_pagar'])){
         <br></br>
         <input type="submit" value="PAGAR" name="btn_pagar">
     </form>
-
+-->
     <div class="container-fluid row">
         <div class="col-8 p-4">
             <table class="table">
@@ -111,11 +112,11 @@ if(isset($_POST['btn_pagar'])){
                     $resul = mysqli_query($obTabla->conexion, $query);
                     while($datos = $resul->fetch_object()){?>
                         <tr>
-                            <td><?php $datos->estado ?></td>
-                            <td><?php $datos->fecha_prestamo ?></td>
-                            <td><?php $datos->id_cliente ?></td>
-                            <td><?php $datos->monto_prestado ?></td>
-                            <td><?php $datos->restante ?></td>
+                            <td><?= $datos->estado?></td>
+                            <td><?= $datos->fecha_prestamo?></td>
+                            <td><?= $datos->id_cliente?></td>
+                            <td><?= $datos->monto_prestado?></td>
+                            <td><?= $datos->restante?></td>
                             <td>
                                 <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
                             </td>
