@@ -29,7 +29,7 @@ if(isset($_POST['btn_pagar'])){
         $id_clien=$ob5->Id_cliente($id_customer);
         //el id del cliente se almacena en la variable
 
-        $id_deuda=$ob5->Deuda_existente($id_clien);
+        $id_deuda=$_POST["id_deudap"];//$ob5->Deuda_existente($id_clien);
         //si el cliente tiene una deuda, la función va a devolver el id de esa deuda
 
         $fecha_abono= date("Y-m-d");
@@ -74,6 +74,9 @@ if(isset($_POST['btn_pagar'])){
         <label for="txb_customer_pay">Cliente</label>
         <input id="txb_customer_pay" type="text" name="txb_customer_pay" placeholder="Nombre">
         <br></br>
+        <p>Ingrese el id de la deuda que quiere pagar</p>
+        <label for="id_deudap">Id deuda</label>
+        <input type="number" id="id_deudap" name="id_deudap">
         <label for="value_pay">Valor a pagar</label>
         <input id="value_pay" type="number" placeholder="Cantidad" name="txb_value_pay">
         <br></br>
