@@ -116,7 +116,7 @@ if(isset($_POST['btn_pagar'])){
                         <tr>
                             <td><?= $datos->estado?></td>
                             <td><?= $datos->fecha_prestamo?></td>
-                            <td><?= $datos->id_cliente?></td>
+                            <td><?= $datos->nombre?></td>
                             <td><?= $datos->monto_prestado?></td>
                             <td><?= $datos->restante?></td>
                             <td>
