@@ -109,7 +109,7 @@ if(isset($_POST['btn_pagar'])){
                     //include "db.php";
                     $obTabla = new Base_datos();
                     $obTabla->Conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004", "8DEL2Del2004@");
-                    $query = "SELECT p.estado, p.fecha_prestamo, c.nombre, p.monto_prestado, p.restante FROM prestamo AS p INNER JOIN cliente AS c ON p.id_cliente=c.id";
+                    $query = "SELECT prestamo.estado, prestamo.fecha_prestamo, cliente.nombre, prestamo.monto_prestado, prestamo.restante FROM prestamo INNER JOIN cliente ON prestamo.id_cliente=cliente.id";
                     $resul = mysqli_query($obTabla->conexion, $query);
             
                     while($datos = $resul->fetch_object()){?>
