@@ -104,20 +104,26 @@ if(isset($_POST['btn_pagar'])){
                 <tbody>
                     <?php
                     include "db.php";
+                    $obTabla = new Base_datos();
+                    $obTabla->conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004", "8DEL2Del2004@");
+                    while($obTabla->Mostrar_deudores()){?>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>algo</td>
+                            <td>algo2</td>
+                            <td>
+                                <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
+                            </td>
+                            <td>
+                                <a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-list"></i></a>
+                            </td>
+                        </tr>
+
+                    <?php }
                     ?>
-                    <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>algo</td>
-                        <td>algo2</td>
-                        <td>
-                            <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
-                        </td>
-                        <td>
-                            <a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-list"></i></a>
-                        </td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>

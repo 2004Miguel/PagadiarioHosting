@@ -29,10 +29,13 @@
             //print('Conexion exitosa');
         }
 
-        public function Mostrar_deudores($consultap){
+        public function Mostrar_deudores(/*$consultap*/){
+            $query="SELECT*FROM prestamo";
+            $resultado=mysqli_query($this->conexion, $query);
+            $datos = $resultado->fetch_object();
+            return $datos;
 
-            $resultado=mysqli_query($this->conexion, $consultap);
-
+            /*
             while($fila=mysqli_fetch_row($resultado)){//cuadno la condición no está igualada a nada, se evalua que la condición sea igual a 0 
                 //mientras la funcion fetch_row encuentre registros, se va a ejecutar el ciclo 
                 print($fila[0]);
@@ -40,7 +43,8 @@
                 echo "<br>";
             }
             mysqli_close($this->conexion);
-            return $fila[0];            
+            return $fila[0];
+            */
         }
 
         public function Insertar($insert){
