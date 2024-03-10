@@ -30,7 +30,7 @@
         }
 
         public function Mostrar_deudores(/*$consultap*/){
-            $query="SELECT*FROM prestamo";
+            $query="SELECT estado, fecha_prestamo, monto_prestado, restante FROM prestamo";
             $resultado=mysqli_query($this->conexion, $query);
             $datos = $resultado->fetch_object();
             return $datos;
