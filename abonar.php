@@ -99,7 +99,6 @@ if(isset($_POST['btn_pagar'])){
                         <th scope="col">Restante</th>
                         <th scope="col">Abonar</th>
                         <th scope="col">Ver abonos</th>
-                        <th scope="col">Ver abonos</th>
 
                     </tr>
                 </thead>
@@ -112,14 +111,11 @@ if(isset($_POST['btn_pagar'])){
                     $resul = mysqli_query($obTabla->conexion, $query);
                     while($datos = $resul->mysqli_fetch_object()){?>
                         <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>algo</td>
-                            <td>algo2</td>
-                            <td>algo2</td>
-
-
+                            <td><?php $datos->estado ?></td>
+                            <td><?php $datos->fecha_prestamo ?></td>
+                            <td><?php $datos->id_cliente ?></td>
+                            <td><?php $datos->monto_prestado ?></td>
+                            <td><?php $datos->restante ?></td>
                             <td>
                                 <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
                             </td>
