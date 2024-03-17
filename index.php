@@ -33,7 +33,8 @@ if(isset($_POST['ver_abonos'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <meta name="description" content="Página web GRATUITA que funciona como un gestor de deudas online">
+    <title>Gestor de deudas online</title>
 </head>
 <body>
     <head>
