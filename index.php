@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-echo "probando el webhoock";
+//echo "probando el webhoock";
 
 if(isset($_POST["btn_añadir"])){
     header("Location:anadir.php");
