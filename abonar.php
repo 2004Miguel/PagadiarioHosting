@@ -66,8 +66,6 @@ if(isset($_POST['btn_pagar'])){
 <body>
     <h1>PANTALLA ABONAR</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <!--
     
     <form action="" method="POST">
         <input type="submit" name="btn_volver" value="VOLVER">
@@ -88,7 +86,7 @@ if(isset($_POST['btn_pagar'])){
         <br></br>
         <input type="submit" value="PAGAR" name="btn_pagar">
     </form>
--->
+<!--
     <div class="container-fluid row">
         <div class="col-8 p-4">
             <table class="table">
@@ -105,7 +103,7 @@ if(isset($_POST['btn_pagar'])){
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
+                    //Se eliminó la apertura de php
                     //include "db.php";
                     $obTabla = new Base_datos();
                     $obTabla->Conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004", "8DEL2Del2004@");
@@ -128,13 +126,14 @@ if(isset($_POST['btn_pagar'])){
                             </td>
                         </tr>
 
-                    <?php }
+                    //Se eliminó la apertura de php }
                     ?>
                     
                 </tbody>
             </table>
         </div>
     </div>
+    -->
     
 </body>
 </html>
