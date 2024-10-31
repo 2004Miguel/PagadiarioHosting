@@ -64,8 +64,8 @@ if(isset($_POST['btn_pagar'])){
     <title>Abonar</title>
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <h1>PANTALLA ABONAR</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     <form action="" method="POST">
         <input type="submit" name="btn_volver" value="VOLVER">
@@ -86,7 +86,7 @@ if(isset($_POST['btn_pagar'])){
         <br></br>
         <input type="submit" value="PAGAR" name="btn_pagar">
     </form>
-
+<!--
     <div class="container-fluid row">
         <div class="col-8 p-4">
             <table class="table">
@@ -94,31 +94,46 @@ if(isset($_POST['btn_pagar'])){
                     <tr>
                         <th scope="col">Estado</th>
                         <th scope="col">Fecha de prestamo</th>
-                        <th scope="col">Id cliente</th>
+                        <th scope="col">cliente</th>
                         <th scope="col">Monto prestado</th>
                         <th scope="col">Restante</th>
                         <th scope="col">Abonar</th>
                         <th scope="col">Ver abonos</th>
+
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>algo</td>
-                        <td>algo2</td>
-                        <td>
-                            <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
-                        </td>
-                        <td>
-                            <a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-list"></i></a>
-                        </td>
-                    </tr>
+                    //Se eliminó la apertura de php
+                    //include "db.php";
+                    $obTabla = new Base_datos();
+                    $obTabla->Conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004", "8DEL2Del2004@");
+                    $query = "SELECT prestamo.id, prestamo.estado, prestamo.fecha_prestamo, cliente.nombre, prestamo.monto_prestado, prestamo.restante FROM prestamo INNER JOIN cliente ON prestamo.id_cliente=cliente.id";
+                    $resul = mysqli_query($obTabla->conexion, $query);
+            
+                    while($datos = $resul->fetch_object()){?>
+                        <tr>
+                            <td><?= $datos->estado?></td>
+                            <td><?= $datos->fecha_prestamo?></td>
+                            <td><?= $datos->nombre?></td>
+                            <td><?= $datos->monto_prestado?></td>
+                            <td><?= $datos->restante?></td>                
+                            <td>
+                                <input type="number">
+                                <a href="" class="btn btn-small btn-warning"><i class="fa-solid fa-money-bill-wave"></i></a>
+                            </td>
+                            <td>
+                                <a href="" class="btn btn-small btn-danger"><i class="fa-solid fa-list"></i></a>
+                            </td>
+                        </tr>
+
+                    //Se eliminó la apertura de php }
+                    ?>
+                    
                 </tbody>
             </table>
         </div>
     </div>
+    -->
     
 </body>
 </html>

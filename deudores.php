@@ -12,7 +12,7 @@ $ob2->Conexion("localhost", "u627259369_pagadiarios", "u627259369_miguesalas2004
 $ver_deudores="SELECT*FROM cliente";
 
 if(isset($_POST['btn_ver_deudores'])){
-    $ob2->Mostrar_deudores($ver_deudores);
+$ob2->Mostrar_deudores(/*$ver_deudores*/);
 }
 
 if(isset($_POST['btn_buscar'])){

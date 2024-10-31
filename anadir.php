@@ -69,6 +69,10 @@ if(isset($_POST['btn_buscar'])){
                 Nombre:
                 <input type="text" name="txb_name" placeholder="nombre">
             </span>
+            <span>
+                Correo: 
+                <input type="email" name="txb_correo" placeholder="Correo electrónico">
+            </span>
             <br></br>
             <input type="submit" name="btn_creacion" value="AÑADIR CLIENTE">
         </form>
